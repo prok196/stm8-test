@@ -23,9 +23,9 @@ param([String]$debugfile = "");
 
 if ($debugfile -eq "")
 {
-& "E:\Software\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "C:\Users\Dell\Desktop\Test_stm8\settings\blink.Debug.general.xcl" --backend -f "C:\Users\Dell\Desktop\Test_stm8\settings\blink.Debug.driver.xcl" 
+& "E:\Software\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\GITHUB\stm8-test\settings\blink.Debug.general.xcl" --backend -f "D:\GITHUB\stm8-test\settings\blink.Debug.driver.xcl" 
 }
 else
 {
-& "E:\Software\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "C:\Users\Dell\Desktop\Test_stm8\settings\blink.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\Dell\Desktop\Test_stm8\settings\blink.Debug.driver.xcl" 
+& "E:\Software\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\GITHUB\stm8-test\settings\blink.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\GITHUB\stm8-test\settings\blink.Debug.driver.xcl" 
 }
